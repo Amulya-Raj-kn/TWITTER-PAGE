@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border:solid */
+}
+
+body {
+  background: #E6ECF0;
+  font-family: Awesome;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  position : fixed;
+  /* border:solid; */
+}
+
+input,button{
+  outline: 0;
+}
+
+.content{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding : 0 30px;
+  /* border : solid; */
+}
+
+header#main-header{
+  height: 46px;
+  background: #FFF;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+  position: fixed;
+  z-index: 1;
+  width : 1495px;
+  /* border: solid; */
+}
+
+header#main-header .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  
+}
+
+header#main-header nav ul {
+  display: flex;
+  list-style: none;
+  /* border : solid; */
+
+}
+header#main-header nav ul :hover{
+  display: flex;
+  list-style: none;
+  border : solid  black;
+  cursor : pointer;
+  background : rgb(126, 253, 232);
+
+}
+
+.header-icons{
+  height: 15px;
+  width: 17;
+  /* border:solid; */
+}
+
+#twitter-logo {
+  height: 16.43px;
+  width: 20.22px;
+  /* border : solid; */
+}
+
+
+
+header#main-header nav ul li{
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #667580;
+  font-weight: bold; 
+  margin-left: 30px;
+}
+
+header#main-header nav ul li:first-child{
+  margin: 0;
+  
+}
+
+header#main-header nav ul li img{
+  margin-right: 7px;
+}
+
+header#main-header div.side {
+  display: flex;
+}
+
+header#main-header div.side input{
+  width: 220px;
+  border: 1px solid  #E6ECF0;
+  height: 34px;
+  padding: 0 40px 0 12px;
+  border-radius: 16px;
+  color: #667581;
+  font-size: 12px;
+  border : side;
+  background: #f5f8fa url('/images/search.svg') no-repeat 180px center;
+}
+
+header#main-header div.side img{
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+header#main-header div.side button { 
+  height: 34px;
+  background: #3bb9e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  border: 0;
+  border-radius: 16px;
+
+}
+
+div.wrapper-content .timeline {
+  flex: 1;
+  background: #FFF;
+  bottom : 312px;
+  right:320px;
+  margin: 10px 20px 0;
+  /* border :solid; */
+  margin-left:300px;
+  position:fixed;
+  max-width: 816px;
+}
+
+div.wrapper-content .timeline nav {
+  border-bottom: 1px solid #E6ECF0;
+  padding: 10px 15px;
+ 
+}
+
+div.wrapper-content .timeline nav a {
+  text-decoration: none;
+  color: #3bb9e3;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+div.wrapper-content .timeline nav a:first-child {
+  margin: 0;
+}
+
+div.wrapper-content .timeline nav a.active {
+  color: #1f2226;
+}
+
+div.wrapper-content .timeline ul.tweets {
+  list-style: none;
+}
+
+div.wrapper-content .timeline ul.tweets li {
+  border-bottom: 1px solid #E6ECF0;
+  padding: 10px 15px;
+  display: flex;
+}
+
+div.wrapper-content .timeline ul.tweets li > img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+div.wrapper-content .timeline ul.tweets li img.images {
+  width: 16px;
+  height: 16px;
+}
+
+div.wrapper-content .timeline ul.tweets li .info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.wrapper-content .timeline ul.tweets li .info strong {
+  font-size: 14px;
+  color: #1f2326;
+}
+
+div.wrapper-content .timeline ul.tweets li .info strong span {
+  font-weight: normal;
+  font-size: 13px;
+  color: #7b8b9a;
+}
+
+div.wrapper-content .timeline ul.tweets li .info p {
+  font-size: 14px;
+  color: #1f2326;
+  margin-top: 5px;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions {
+  display: flex;
+  margin-top: 20px;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #667580;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions a:first-child{
+  margin-left: 0;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions a img {
+  margin-right: 5px;
+}
+/* -------------------------------------------------------------------------- */
+
+/* this style is for who to follow */
+
+div.wrapper-content aside.widgets {
+  width: 300px;
+  top:50px;
+  right : 30px;
+  margin-top: 15px;
+  position : fixed;
+  margin-left: 1110px;
+  /* border: solid; */
+ 
+}
+
+div.wrapper-content aside.widgets .widget {
+  background: #FFF;
+  padding: 15px;
+
+  /* border:solid; */
+}
+
+div.wrapper-content aside.widgets .widget .title {
+  display: flex;
+  align-items: baseline;
+  
+}
+
+div.wrapper-content aside.widgets .widget .title strong {
+  font-size: 18px;
+  color: #1f2226;
+ 
+}
+
+div.wrapper-content aside.widgets .widget .title a {
+  color: #3bb9e3;
+  font-size: 12px;
+  text-decoration: none;
+  position: fixed;
+  padding-left: 10px;
+  /* border : solid; */
+}
+
+div.wrapper-content aside.widgets .widget .title a::before {
+  content: '';
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #222;
+  position: absolute;
+  left: 4px;
+  top: 6px;
+}
+
+div.wrapper-content aside.widgets .follow ul  {
+  list-style: none;
+  margin-top: 10px;
+  /* border : solid; */
+}
+
+
+
+div.wrapper-content aside.widgets .follow ul li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccd6dd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+div.wrapper-content aside.widgets .follow ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border: 0;
+  /* border : solid; */
+}
+
+div.wrapper-content aside.widgets .follow ul li .follow-profile {
+  display: flex;
+  align-items: center;
+ 
+}
+
+div.wrapper-content aside.widgets .follow ul li .follow-profile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  /* border : solid; */
+}
+
+div.wrapper-content aside.widgets .follow ul li .follow-info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  /* border : solid; */
+ 
+}
+
+div.wrapper-content aside.widgets .follow ul li .follow-info strong {
+  font-size: 14px;
+  color: #1f2326;
+  /* border : solid; */
+}
+
+div.wrapper-content aside.widgets .follow ul li .follow-info strong span {
+  font-weight: normal;
+  color: #9a9a9a;
+  
+}
+
+div.wrapper-content aside.widgets .follow ul li .follow-info button{
+  height: 27px;
+  margin-top: 4px;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3bb9e3;
+  border: 3px solid black;
+  border-radius: 16px;
+  margin-right: 20px;  
+}
+
+
+
+div.wrapper-content aside.widgets .follow ul li >  {
+  color: #ccd6dd;
+  text-decoration: burlywood;
+  font-size: 14px;
+
+
+}
+/* ------------------------------------------------------------------- */
+
+/* //this is for the profile box// */
+
+.wrapper{
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border:1px solid #e1e8ed;
+  border-radius: 6px;
+  height:auto;
+  width:300px;
+  margin-top: 10px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,.09);
+  /* border : solid; */
+  position:fixed;
+  margin-right: 0px;
+  bottom: 437px;
+  left : 35px;
+  /* padding-right: 100px; */
+  /* border:solid; */
+} 
+.main-wrapper {
+  /* background-image: url("./images/clock.svg");  */
+  background-color: black;
+  background-position: 0 50%;
+  background-size: 100% auto;
+  border-radius: 4px 4px 0px 0px;
+  height:95px;
+  width:300px;
+  /* border: solid ; */
+  padding-right : 290px;
+  padding-bottom : 60px;
+  /* border : solid; */
+}
+#profile-link{
+  background-color: #fff;
+  border-radius: 30px;
+  display: inline-block;
+ 
+  margin:-30px 5px 0px 8px;
+  margin-top: 30px;
+  max-width:300px;
+  padding-top:0px;
+  vertical-align: bottom;
+   /* border : solid ;  */
+}
+#profile-img{
+  border:2px solid #fff;
+  border-radius: 80px;
+  color:#fff;
+  height:60px;
+  width:60px;
+  top : 30px;
+  
+}
+#profile-marg{
+  margin-left: 90px;
+  /* border : solid; */
+  margin-bottom: 0px;
+  top : 10px;
+}
+#profile-name{
+  font-size:18px;
+  font-weight: 700;
+  line-height: 21px;
+  
+}
+#profile-name a{
+  color:inherit;
+}
+#profile-state{
+  padding:15px;
+}
+#profile-Arrange{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:0;
+  min-width:100%;
+  padding:0px;
+
+}
+ul#profile-Arrange{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+#profile-details a:hover{
+  text-decoration: none;
+  cursor : pointer;
+  background: red ;
+}
+#profile-number{
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.15s ease-in-out 0s;
+  color: blue;
+}
+#profile-label{
+  color:#8899a6;
+  font-size:10px;
+  letter-spacing: 0.02em;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: color 0.15s ease-in-out 0s;
+  color : black;
+}
+
+/* ------------------------------------------------------------------- */
+
